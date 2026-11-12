@@ -3,5 +3,6 @@
   "catalogue": "public HOLD projection; internal products require authorized BOZ login",
   "buildVersion": 1,
   "sourceCommit": "7e265447e990cf45c0b1d0369a8a2548c7e0e37f",
-  "verificationNote": "Held descriptions suppress legacy price and promotion claims"
+  "verificationNote": "Held descriptions suppress legacy price and promotion claims",
+  "javascript": "boz-app-9b9b604641b7.js"
 }
