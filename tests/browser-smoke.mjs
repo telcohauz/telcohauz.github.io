@@ -12,6 +12,7 @@ try {
   await page.goto('http://127.0.0.1:3032/catalog/');
   await page.locator('main[data-ready="true"]').waitFor();
   assert.ok((await page.locator('article').count())>0);
+  for (const text of await page.locator('article').allTextContents()) assert.equal(/RM\s*\d/.test(text),false,'held product descriptions do not advertise prices');
   await page.getByLabel('Cari produk').fill('no-such-product');
   await page.getByText(/Tiada produk sepadan/).waitFor();
   await page.getByLabel('Cari produk').fill('unifi');
