@@ -1,0 +1,19 @@
+{
+  "name": "TELCOHAUZ Agent Market",
+  "short_name": "TH Agent",
+  "description": "Sistem pemeriksaan dan jual beli telefon oleh ejen berdaftar Telcohauz.",
+  "lang": "ms",
+  "start_url": "/agent-market/",
+  "scope": "/agent-market/",
+  "display": "standalone",
+  "background_color": "#0c1020",
+  "theme_color": "#101323",
+  "icons": [
+    {
+      "src": "/agent-market/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
