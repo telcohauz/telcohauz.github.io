@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101323"><meta name="description" content="TELCOHAUZ Agent Market: pembelian, pemeriksaan dan jualan semula telefon terpakai.">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>TELCOHAUZ AGENT | Device Trade</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color-scheme:dark;--bg:#0c1020;--surface:#171c30;--surface2:#232b43;--text:#f4f5ff;--muted:#a4aec8;--blue:#64c5ff;--purple:#9c80ff;--line:#36405b;--good:#5cdbb2;--alert:#ffbb74}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#242249,transparent 42%),var(--bg);color:var(--text);min-height:100dvh}button,input,select,textarea{font:inherit}a{color:var(--blue)}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}button,input,select,textarea{outline-offset:3px}input,select,textarea{width:100%;background:#0e1529;border:1px solid #3b4664;color:var(--text);padding:13px 14px;border-radius:12px}input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:transparent}input[type=checkbox]{width:20px;height:20px;flex:none;accent-color:var(--blue)}label{display:block;margin-bottom:7px;font-size:13px;color:#c1cae0;font-weight:600}h1,h2,h3,p{margin-top:0}.shell{max-width:950px;margin:auto;padding:20px 17px 110px}.top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:26px}.identity{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;font-size:23px;font-weight:900;color:#071521;background:linear-gradient(135deg,var(--blue),var(--purple));width:47px;height:47px;border-radius:15px;box-shadow:0 8px 30px #6d8eff33}.brand{letter-spacing:1.9px;font-weight:900;font-size:14px}.subbrand{font-size:11px;color:var(--muted);margin-top:4px}.status{font-size:11px;color:var(--good);border:1px solid #487968;border-radius:30px;padding:7px 10px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--blue);font-weight:700;margin-bottom:12px}.hero{padding:26px 24px;background:linear-gradient(130deg,#282b58,#18263f 64%,#152c39);border:1px solid #455079;border-radius:24px;position:relative;overflow:hidden;margin-bottom:18px}.hero:after{content:"◇";position:absolute;right:-20px;top:-48px;font-size:240px;color:#b5a0ff18;pointer-events:none}.hero h1{font-size:clamp(28px,5vw,40px);letter-spacing:-1px;line-height:1.13;margin-bottom:12px}.hero p{color:#cfddf5;max-width:580px;line-height:1.55;font-size:14px}.btn{border:0;background:linear-gradient(120deg,#62c9fb,#9b85ff);color:#071321;padding:13px 17px;font-weight:800;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none}.btn.secondary{background:var(--surface2);color:var(--text);border:1px solid #52607c}.btn.full{width:100%}.btn.small{padding:9px 12px;font-size:12px}.btn:focus-visible{outline:3px solid #fff}.panel{border:1px solid var(--line);background:#161c30d9;border-radius:18px;padding:20px;margin:16px 0}.panel h2{font-size:20px;letter-spacing:-.5px;margin-bottom:8px}.panel h3{font-size:15px;margin-bottom:8px}.muted{color:var(--muted)}.smalltext{font-size:12px;line-height:1.55}.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:#1b2541;border-radius:14px;padding:15px;border:1px solid #3b4e70}.metric b{font-size:22px;display:block;margin-top:8px}.metric span{font-size:11px;color:#b3bfd9}.field{margin-bottom:15px}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.grow{flex:1}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pill{display:inline-block;background:#2a3554;border:1px solid #455376;border-radius:30px;padding:6px 10px;font-size:11px;color:#d5e5ff}.pill.pending{color:var(--alert)}.note{padding:12px 14px;border-left:3px solid var(--blue);background:#273450;border-radius:8px;font-size:12px;color:#d9e7fa;line-height:1.65}.note.warn{border-left-color:var(--alert)}.check{display:flex;gap:11px;align-items:flex-start;padding:10px 0}.check label{margin:0;line-height:1.45;font-weight:500}.section{display:none}.section.active{display:block}.nav{position:fixed;bottom:0;left:0;right:0;background:#11182dee;border-top:1px solid #394665;backdrop-filter:blur(18px);z-index:10;padding:8px max(8px,env(safe-area-inset-left)) max(9px,env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,1fr)}.nav button{border:0;background:transparent;color:#acb7cd;display:grid;gap:3px;place-items:center;padding:8px 2px;border-radius:12px;font-size:11px}.nav button span{font-size:22px}.nav button.on{background:#293755;color:#72d2ff}.flow{display:flex;gap:6px;margin:15px 0 20px}.step{flex:1;border-radius:40px;height:5px;background:#3a4561}.step.on{background:var(--blue)}.preview-box{border:1px dashed #556c92;background:#111e37;padding:14px;border-radius:12px}.record{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid var(--line)}.record:last-child{border:0}.empty{padding:30px 10px;text-align:center;color:var(--muted);font-size:14px}.hint{font-size:11px;color:#a7b6d4;margin-top:6px;line-height:1.5}.hidden{display:none!important}.toast{position:fixed;z-index:50;left:16px;right:16px;bottom:93px;max-width:500px;margin:auto;padding:13px 16px;border-radius:13px;background:#d8f7f0;color:#123c37;font-weight:700;box-shadow:0 8px 40px #0008}.toast.error{background:#ffe0dc;color:#6d2121}.divider{height:1px;background:var(--line);margin:17px 0}.auth-box{max-width:490px;margin:45px auto}.loader{font-size:13px;color:#b7daf5}ul.clean{padding-left:20px;line-height:1.9}@media(min-width:760px){.shell{padding:28px 30px 100px}.nav{max-width:580px;left:50%;right:auto;transform:translateX(-50%);border-radius:18px 18px 0 0;width:100%}.dashboard{display:grid;grid-template-columns:1fr 1fr;gap:16px}.dashboard .panel{margin:0}.wide{grid-column:1/-1}}@media(max-width:430px){.split{grid-template-columns:1fr}.metric-grid{gap:7px}.metric{padding:11px}.metric b{font-size:18px}.hero{padding:21px 17px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="top"><div class="identity"><div class="mark">T↗</div><div><div class="brand">TELCOHAUZ</div><div class="subbrand">AGENT MARKET / DEVICE TRADE</div></div></div><span id="headStatus" class="status">SISTEM PILOT</span></header>
+<div id="authArea" class="auth-box panel">
+<p class="eyebrow">PORTAL EJEN BERDAFTAR</p><h1>Urus jual beli telefon.</h1><p class="muted smalltext">Log masuk untuk merekod pemeriksaan telefon, mendapatkan cadangan harga dan menghantar rekod untuk kelulusan HQ.</p>
+<form id="authForm"><div class="field"><label for="email">E-mel ejen</label><input id="email" type="email" autocomplete="email" required></div><div class="field"><label for="password">Kata laluan</label><input id="password" type="password" minlength="8" autocomplete="current-password" required></div><button id="loginBtn" class="btn full" type="submit">Log masuk</button></form>
+<button id="signUpBtn" class="btn secondary full" style="margin-top:9px" type="button">Daftar akaun ejen</button>
+<p class="hint">Pendaftaran akaun tidak bermakna kelulusan sebagai ejen. HQ perlu meluluskan kedai/akaun terlebih dahulu.</p>
+</div>
+<div id="appArea" class="hidden">
+<section class="section active" id="tab-home">
+<div class="hero"><p class="eyebrow">JUAL BELI DENGAN SOP</p><h1>Beli bijak.<br>Jual dengan yakin.</h1><p>Setiap telefon direkodkan mengikut IMEI, dinilai, diperiksa dan dihantar ke HQ sebelum dijual. Stok kekal di tangan ejen.</p><button class="btn" data-go="buy">＋ Mulakan pemeriksaan</button></div>
+<div class="metric-grid"><div class="metric"><span>Rekod peranti</span><b id="countItems">0</b></div><div class="metric"><span>Menunggu HQ</span><b id="countPending">0</b></div><div class="metric"><span>Jualan</span><b id="countSales">0</b></div></div>
+<div class="dashboard" style="margin-top:17px"><article class="panel"><h2>Aliran operasi</h2><ul class="clean smalltext"><li>Terima telefon dan sahkan pemilik.</li><li>Rekod IMEI, gambar dan video diagnostik.</li><li>Rujuk harga pasaran; harga belian maksimum 40% selepas potongan.</li><li>HQ semak keputusan IMEI, sekatan telco dan kondisi.</li><li>Selepas pembelian diluluskan, senaraikan di marketplace.</li><li>Pelanggan bayar melalui saluran rasmi; ejen hantar.</li><li>Selepas penghantaran disahkan dan tempoh pertikaian selesai, pembayaran ejen diproses.</li></ul></article><article class="panel"><h2>Peraturan tetap</h2><p class="pill">Belian ≤ 40%</p> <p class="pill">Jual normal 100%</p> <p class="pill">Jual segera 60%</p> <p class="pill">Yuran app 10%</p><div class="divider"></div><div class="note warn">Sistem ini dalam pilot. Semakan automatik SICKW, diagnosis AI, pembayaran sebenar, penyenaraian automatik dan payout belum diaktifkan. Tiada wang diproses dalam aplikasi ini.</div></article></div>
+</section>
+<section class="section" id="tab-buy">
+<p class="eyebrow">INTAKE / PERANTI TERPAKAI</p><h1>Semak & nilaikan HP</h1><p class="muted smalltext">Satu telefon = satu rekod IMEI. Semua harga ialah cadangan sehingga disahkan oleh HQ.</p>
+<div class="panel"><div class="flow"><div class="step on"></div><div class="step on"></div><div class="step on"></div><div class="step on"></div></div>
+<form id="intakeForm">
+<div class="split"><div class="field"><label for="model">Model telefon</label><input id="model" placeholder="Contoh: iPhone 13 128GB" maxlength="120" list="models" required><datalist id="models"></datalist></div><div class="field"><label for="storage">Storan / warna</label><input id="storage" placeholder="128GB / Midnight" maxlength="80"></div></div>
+<div class="split"><div class="field"><label for="imei">IMEI 15 digit</label><input id="imei" inputmode="numeric" pattern="[0-9]{15}" maxlength="15" placeholder="Masukkan IMEI sebenar" required><div class="hint" id="imeiHint">Semak pada peranti; laporan SICKW memerlukan pengesahan berasingan.</div></div><div class="field"><label for="sellerRef">Rujukan penjual</label><input id="sellerRef" maxlength="80" placeholder="Kod resit / rujukan sahaja"><div class="hint">Jangan masukkan IC atau kata laluan pelanggan.</div></div></div>
+<div class="split"><div class="field"><label for="price">Harga pasaran rujukan (RM)</label><input type="number" id="price" min="1" max="100000" step="0.01" placeholder="Disahkan HQ" required><div id="priceSource" class="hint">Nilai berdasarkan sumber terhad; HQ akan sahkan.</div></div><div class="field"><label for="grade">Gred pemeriksaan awal</label><select id="grade"><option value="pending">Belum dinilai</option><option>A</option><option>B</option><option>C</option><option>D</option></select></div></div>
+<h3>Diagnostik awal oleh ejen</h3>
+<div class="split"><div><div class="check"><input id="screenOK" type="checkbox" checked><label for="screenOK">Skrin dan sentuhan berfungsi</label></div><div class="check"><input id="cameraOK" type="checkbox" checked><label for="cameraOK">Kamera hadapan/belakang berfungsi</label></div><div class="check"><input id="batteryOK" type="checkbox" checked><label for="batteryOK">Bateri dan pengecasan normal</label></div></div><div><div class="check"><input id="speakerOK" type="checkbox" checked><label for="speakerOK">Speaker/mikrofon berfungsi</label></div><div class="check"><input id="networkOK" type="checkbox" checked><label for="networkOK">Rangkaian, WiFi dan SIM berfungsi</label></div><div class="check"><input id="activationOK" type="checkbox" checked><label for="activationOK">Tiada kunci akaun/aktivasi</label></div></div></div>
+<div class="check"><input id="telcoSuspect" type="checkbox"><label for="telcoSuspect">Telefon disyaki masih di bawah kontrak, ansuran atau sekatan telco (wajib semakan HQ; tidak boleh diteruskan dengan diskaun sahaja)</label></div>
+<div class="split"><div class="field"><label for="deduct">Potongan kondisi dicadang (RM)</label><input id="deduct" type="number" min="0" step=".01" value="0"></div><div class="field"><label for="telcoDeduct">Potongan risiko telco (RM)</label><input id="telcoDeduct" type="number" min="0" step=".01" value="0" disabled><div class="hint">Hanya untuk cadangan HQ, bukan pelepasan kontrak.</div></div></div>
+<div class="field"><label for="notes">Nota pemeriksaan / kecacatan</label><textarea id="notes" rows="2" maxlength="1000" placeholder="Contoh: calar di bingkai, dent kamera"></textarea></div>
+<div class="preview-box"><div class="split"><div><small class="muted">Belian maksimum ejen</small><h2 id="buyMax">RM0.00</h2></div><div><small class="muted">Yuran platform (10% nilai)</small><h2 id="feeValue">RM0.00</h2></div></div><div class="divider"></div><div class="split"><div><span class="smalltext">Marketplace 100%: <b id="normalValue">RM0.00</b></span><p class="hint">Ejen terima: <b id="normalNet">RM0.00</b></p></div><div><span class="smalltext">Jual segera 60%: <b id="quickValue">RM0.00</b></span><p class="hint">Ejen terima: <b id="quickNet">RM0.00</b></p></div></div></div>
+<div class="field" style="margin-top:17px"><label for="offer">Harga tawaran beli oleh ejen (RM)</label><input id="offer" type="number" min="0" step=".01" placeholder="Tidak melebihi maksimum" required></div>
+<h3>Bukti fizikal (kamera telefon)</h3><div class="split"><div class="field"><label for="photoType">Sudut gambar</label><select id="photoType"><option value="front">Hadapan</option><option value="back">Belakang</option><option value="left">Sebelah kiri</option><option value="right">Sebelah kanan</option><option value="screen">Skrin</option><option value="imei">Label/IMEI</option><option value="damage">Kecacatan</option></select><input id="photo" type="file" accept="image/jpeg,image/png,image/webp" capture="environment" style="margin-top:9px"></div><div class="field"><label for="video">Video fungsi (≤10MB)</label><input id="video" type="file" accept="video/mp4,video/webm" capture="environment"></div></div>
+<p class="hint">Bukti dihantar ke storan peribadi. Jangan rakam kandungan peribadi pelanggan. Foto dan video perlu melalui semakan manusia/AI yang disambungkan kelak; gambar sahaja tidak mengesahkan fungsi dalaman.</p>
+<div class="divider"></div>
+<div class="check"><input id="ownerCheck" type="checkbox" required><label for="ownerCheck">Penjual mengaku pemilik sah dan boleh menjual peranti ini.</label></div>
+<div class="check"><input id="consentCheck" type="checkbox" required><label for="consentCheck">Penjual bersetuju terhadap pemeriksaan IMEI, diagnosis dan rakaman bukti peranti.</label></div>
+<div class="note warn">Rekod ini akan dihantar sebagai <b>menunggu semakan HQ</b>, bukan bukti pembelian rasmi atau tawaran muktamad. Jangan membayar penjual sehingga sekatan/IMEI dan harga disahkan.</div>
+<button id="saveIntake" class="btn full" type="submit" style="margin-top:15px">Simpan rekod & hantar untuk semakan HQ</button>
+</form></div>
+</section>
+<section class="section" id="tab-stock"><p class="eyebrow">INVENTORI DIPEGANG EJEN</p><h1>Rekod HP</h1><p class="muted smalltext">Peranti yang direkod oleh ejen ini sahaja. Kelulusan belum bermakna transaksi lengkap.</p><div class="panel" id="stockList"><div class="empty">Tiada rekod.</div></div></section>
+<section class="section" id="tab-sales"><p class="eyebrow">PESANAN, KURIER & BAYARAN</p><h1>Jualan & settlement</h1><div class="note warn">Pembayaran pelanggan dan payout ejen hanya akan diproses selepas integrasi penyedia pembayaran berlesen, webhook serta semakan penghantaran/pertikaian diuji. Jangan menerima bukti screenshot sahaja sebagai bayaran sah.</div><div class="panel" id="salesList"><div class="empty">Tiada jualan disahkan.</div></div></section>
+<section class="section" id="tab-account"><p class="eyebrow">AKSES & TETAPAN</p><h1>Akaun ejen</h1><div class="panel"><h2 id="userEmail">—</h2><p id="shopStatus" class="muted smalltext">Semak akses...</p><div id="shopRegister" class="hidden"><h3>Permohonan ejen Telcohauz</h3><form id="shopForm"><div class="field"><label for="shopName">Nama ejen / kedai</label><input id="shopName" minlength="2" maxlength="90" required></div><div class="split"><div class="field"><label for="shopState">Negeri</label><select id="shopState"><option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option><option>Negeri Sembilan</option><option>Pahang</option><option>Perak</option><option>Perlis</option><option>Pulau Pinang</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option><option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option></select></div><div class="field"><label for="shopCity">Bandar</label><input id="shopCity" required minlength="2" maxlength="70"></div></div><button class="btn full" type="submit">Hantar permohonan kepada HQ</button></form></div><div class="divider"></div><p class="muted smalltext">Semakan IMEI di <a href="https://sickw.com/" target="_blank" rel="noopener noreferrer">SICKW</a> memerlukan akses sah dan mungkin berbayar. Semakan kontrak telco perlu bukti yang sesuai dan pengesahan HQ.</p><button class="btn secondary full" id="logoutBtn" type="button">Log keluar</button></div></section>
+</div>
+</div>
+<nav id="bottomNav" class="nav hidden" aria-label="Menu utama"><button type="button" data-tab="home" class="on"><span>⌂</span>Utama</button><button type="button" data-tab="buy"><span>＋</span>Beli HP</button><button type="button" data-tab="stock"><span>▣</span>Stok</button><button type="button" data-tab="sales"><span>⇄</span>Jualan</button></nav>
+<div id="toast" class="toast hidden" role="status"></div>
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.4/+esm";
+const sb=createClient("https://rkxcioziaxrbqqpduunq.supabase.co","sb_publishable_HXUsM7CAout7NUvpyT_z4g_O0uHs7HN",{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+const $=id=>document.getElementById(id),money=v=>"RM"+(Number(v)||0).toLocaleString("en-MY",{minimumFractionDigits:2,maximumFractionDigits:2});
+const h=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let user=null,shop=null,allShops=[],refs=[],intakes=[],sales=[],toastTimeout;
+function toast(m,error=false){const el=$("toast");el.textContent=m;el.className="toast"+(error?" error":"");clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>el.classList.add("hidden"),6500)}
+function nav(t){document.querySelectorAll(".section").forEach(s=>s.classList.toggle("active",s.id==="tab-"+t));document.querySelectorAll("[data-tab]").forEach(b=>b.classList.toggle("on",b.dataset.tab===t));window.scrollTo({top:0,behavior:"smooth"})}
+function eligible(){return !!shop&&shop.status==="approved"}
+function imeiValid(x){if(!/^\d{15}$/.test(x))return false;let sum=0;for(let i=0;i<15;i++){let n=Number(x[i]);if(i%2===1){n*=2;if(n>9)n-=9}sum+=n}return sum%10===0}
+function calc(){
+ const market=Number($("price").value)||0,cond=Number($("deduct").value)||0,telco=Number($("telcoDeduct").value)||0;
+ const max=Math.max(0,(market-cond-telco)*0.40),fee=market*.10;
+ $("buyMax").textContent=money(max);$("feeValue").textContent=money(fee);$("normalValue").textContent=money(market);$("quickValue").textContent=money(market*.6);
+ $("normalNet").textContent=money(market-fee);$("quickNet").textContent=money(market*.6-fee);
+ $("offer").max=max.toFixed(2);
+ return {market,cond,telco,max};
+}
+function matchReference(){
+ const x=$("model").value.trim().toLowerCase();const v=refs.find(r=>r.model.toLowerCase()===x);
+ if(v){$("price").value=Number(v.amount_myr).toFixed(2);$("priceSource").textContent="Rujukan: "+v.source_name+" • "+v.checked_on+" — pengesahan HQ masih diperlukan"}
+ else {$("priceSource").textContent="Tiada padanan tepat dalam sumber. Masukkan anggaran untuk disemak HQ."}
+ calc();
+}
+async function getRecords(){
+ if(!eligible())return;
+ const [d,s,r]=await Promise.all([
+ sb.from("agent_device_intakes").select("id,model_name,imei,market_price_myr,proposed_buy_myr,grade,telco_status,status,created_at").eq("agent_user_id",user.id).order("created_at",{ascending:false}).limit(100),
+ sb.from("agent_market_sales").select("id,buyer_amount_myr,platform_fee_myr,agent_net_myr,status,sale_mode,channel,created_at").eq("agent_user_id",user.id).order("created_at",{ascending:false}).limit(100),
+ sb.from("market_price_reference_sources").select("model,amount_myr,source_name,checked_on").limit(500)
+ ]);
+ if(d.error)toast("Gagal mendapatkan stok: "+d.error.message,true);if(s.error)toast("Gagal membaca rekod jualan: "+s.error.message,true);
+ intakes=d.data||[];sales=s.data||[];refs=r.data||[];
+ $("models").innerHTML=refs.map(v=>'<option value="'+h(v.model)+'"></option>').join("");
+ $("countItems").textContent=intakes.length;$("countPending").textContent=intakes.filter(v=>v.status==="awaiting_review").length;$("countSales").textContent=sales.length;
+ $("stockList").innerHTML=intakes.length?intakes.map(d=>'<div class="record"><div><b>'+h(d.model_name)+'</b><p class="muted smalltext" style="margin:6px 0">IMEI •••• '+h(d.imei.slice(-4))+' | Gred '+h(d.grade)+'<br>'+h(new Date(d.created_at).toLocaleDateString("ms-MY"))+'</p><span class="pill pending">'+h(d.status.replaceAll("_"," "))+'</span></div><div style="text-align:right"><strong>'+money(d.proposed_buy_myr)+'</strong><p class="hint">Cadangan belian</p></div></div>').join(""):'<div class="empty">Tiada telefon direkodkan. Pergi ke Beli HP untuk bermula.</div>';
+ $("salesList").innerHTML=sales.length?sales.map(s=>'<div class="record"><div><b>'+h(s.sale_mode==="normal_100"?"Jualan normal":"Jualan segera")+'</b><p class="muted smalltext">'+h(s.channel)+'<br>Status: '+h(s.status.replaceAll("_"," "))+'</p></div><div style="text-align:right"><b>'+money(s.buyer_amount_myr)+'</b><p class="hint">Yuran: '+money(s.platform_fee_myr)+'<br>Ejen: '+money(s.agent_net_myr)+'</p></div></div>').join(""):'<div class="empty">Belum ada transaksi yang disahkan oleh sistem pembayaran.</div>';
+}
+async function refresh(){
+ if(!user){$("authArea").classList.remove("hidden");$("appArea").classList.add("hidden");$("bottomNav").classList.add("hidden");return}
+ $("authArea").classList.add("hidden");$("appArea").classList.remove("hidden");$("bottomNav").classList.remove("hidden");$("userEmail").textContent=user.email||user.id;
+ const {data,error}=await sb.from("market_shops").select("id,owner_id,display_name,status,state,city").eq("owner_id",user.id).order("created_at",{ascending:false}).limit(10);
+ if(error){toast("Gagal semak pendaftaran: "+error.message,true);return}
+ allShops=data||[];shop=allShops.find(s=>s.status==="approved")||allShops[0]||null;
+ $("shopStatus").textContent=shop?"Kedai: "+shop.display_name+" — status "+shop.status:"Belum ada pendaftaran ejen.";
+ $("shopRegister").classList.toggle("hidden",!!shop);
+ $("headStatus").textContent=eligible()?"EJEN DILULUSKAN":"MENUNGGU HQ";
+ $("saveIntake").disabled=!eligible();
+ if(eligible()){await getRecords()}else{toast("Pendaftaran ejen perlu diluluskan HQ sebelum merekod peranti.");}
+}
+$("authForm").addEventListener("submit",async e=>{e.preventDefault();const b=$("loginBtn");b.disabled=true;const {data,error}=await sb.auth.signInWithPassword({email:$("email").value.trim(),password:$("password").value});b.disabled=false;if(error)return toast(error.message,true);user=data.user;await refresh()});
+$("signUpBtn").addEventListener("click",async()=>{const email=$("email").value.trim(),password=$("password").value;if(!email||password.length<8)return toast("Masukkan e-mel dan kata laluan minimum 8 aksara.",true);const r=await sb.auth.signUp({email,password});if(r.error)return toast(r.error.message,true);toast("Pendaftaran diterima. Semak e-mel pengesahan sebelum log masuk, jika diminta.")});
+$("logoutBtn").addEventListener("click",async()=>{await sb.auth.signOut();user=null;shop=null;await refresh();nav("home")});
+$("shopForm").addEventListener("submit",async e=>{e.preventDefault();if(!user)return;const r=await sb.from("market_shops").insert({owner_id:user.id,display_name:$("shopName").value.trim(),state:$("shopState").value,city:$("shopCity").value.trim(),buyer_mode:"buyback",terms:"Saya bersetuju mematuhi SOP dan kelulusan HQ Telcohauz.",status:"pending"});if(r.error)return toast(r.error.message,true);toast("Permohonan ejen dihantar ke HQ.");await refresh()});
+for(const el of ["price","deduct","telcoDeduct"])$(el).addEventListener("input",calc);
+$("model").addEventListener("change",matchReference);$("model").addEventListener("blur",matchReference);
+$("imei").addEventListener("input",()=>{$("imei").value=$("imei").value.replace(/\D/g,"").slice(0,15);$("imeiHint").textContent=$("imei").value.length===15?(imeiValid($("imei").value)?"Format IMEI dan digit semakan sah; status blacklist/telco BELUM disemak.":"Nombor IMEI gagal ujian digit semakan."):"Masukkan IMEI 15 digit dari peranti, kemudian semak status secara sah."});
+$("telcoSuspect").addEventListener("change",()=>{$("telcoDeduct").disabled=!$("telcoSuspect").checked;if(!$("telcoSuspect").checked)$("telcoDeduct").value="0";calc()});
+$("intakeForm").addEventListener("submit",async e=>{
+ e.preventDefault();if(!eligible())return toast("Ejen belum diluluskan HQ.",true);
+ const imei=$("imei").value;if(!imeiValid(imei))return toast("IMEI tidak sah (15 digit/Luhn).",true);
+ const v=calc(),offer=Number($("offer").value);
+ if(!v.market||v.market<=0||v.cond<0||v.telco<0||!Number.isFinite(offer)||offer<0||offer>v.max+0.001)return toast("Semak harga belian: tawaran melebihi 40% nilai selepas potongan.",true);
+ if(!$("ownerCheck").checked||!$("consentCheck").checked)return toast("Persetujuan pemilik dan pengesahan hak milik wajib.",true);
+ const status="awaiting_review";
+ const flags=["screenOK","cameraOK","batteryOK","speakerOK","networkOK","activationOK"];
+ const checks=Object.fromEntries(flags.map(k=>[k,$(k).checked]));checks.suspected_contract=$("telcoSuspect").checked;
+ const body={agent_user_id:user.id,shop_id:shop.id,model_name:$("model").value.trim(),storage_spec:$("storage").value.trim(),imei,seller_reference:$("sellerRef").value.trim(),seller_confirmed_owner:true,seller_consented:true,market_price_myr:v.market,condition_discount_myr:v.cond,telco_discount_myr:v.telco,proposed_buy_myr:offer,grade:$("grade").value,telco_status:checks.suspected_contract?"review_required":"unknown",status,condition_checks:checks,inspection_notes:$("notes").value.trim()};
+ if(!body.model_name||body.model_name.length<2)return toast("Model telefon wajib diisi.",true);
+ $("saveIntake").disabled=true;const r=await sb.from("agent_device_intakes").insert(body).select("id").single();
+ if(r.error){$("saveIntake").disabled=false;return toast("Gagal menyimpan: "+r.error.message,true)}
+ const jobs=[];const photo=$("photo").files[0],video=$("video").files[0];
+ if(photo)jobs.push(uploadEvidence(r.data.id,photo,$("photoType").value,"image"));
+ if(video)jobs.push(uploadEvidence(r.data.id,video,"diagnostic_video","video"));
+ const done=await Promise.allSettled(jobs);const errs=done.filter(x=>x.status==="rejected");
+ $("intakeForm").reset();$("telcoDeduct").disabled=true;calc();$("saveIntake").disabled=false;await getRecords();nav("stock");
+ toast(errs.length?"Rekod disimpan; "+errs.length+" fail bukti gagal dimuat naik. Hubungi HQ untuk melengkapkannya.":"Rekod & bukti dihantar untuk semakan HQ.",!!errs.length);
+});
+async function uploadEvidence(intakeId,file,captureType,kind){
+ if(file.size>10485760)throw new Error("Fail terlalu besar (maksimum 10MB)");
+ const type=file.type;if(!["image/jpeg","image/png","image/webp","video/mp4","video/webm"].includes(type))throw new Error("Format fail tidak disokong");
+ const ext=({"image/jpeg":"jpg","image/png":"png","image/webp":"webp","video/mp4":"mp4","video/webm":"webm"})[type];
+ const path=user.id+"/"+intakeId+"/"+crypto.randomUUID()+"."+ext;
+ const up=await sb.storage.from("agent-device-evidence").upload(path,file,{contentType:type,upsert:false});
+ if(up.error)throw up.error;
+ const db=await sb.from("agent_device_media").insert({intake_id:intakeId,agent_user_id:user.id,storage_path:path,media_type:kind,capture_type:captureType});
+ if(db.error)throw db.error;
+}
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>nav(b.dataset.tab)));
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>nav(b.dataset.go)));
+const initial=await sb.auth.getUser();if(initial.data?.user)user=initial.data.user;await refresh();
+sb.auth.onAuthStateChange(async(event,session)=>{if(event==="SIGNED_OUT"){user=null;shop=null;await refresh()}});
+if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js").catch(()=>{});
+</script>
+</body></html>
